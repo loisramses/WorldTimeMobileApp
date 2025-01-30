@@ -1,16 +1,41 @@
-# world_time_app
+# World Time Mobile App
 
-A new Flutter project.
+A simple Flutter application that displays the current time for different locations using an API.
 
-## Getting Started
+## Features
+- Fetches real-time data using the `timeapi.io` API
+- Displays current time for a selected location
+- Allows users to edit and choose a different location
+- Implements navigation between different screens
 
-This project is a starting point for a Flutter application.
+## Installation
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/loisramses/WorldTimeMobileApp.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd WorldTimeMobileApp
+   ```
+3. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
+4. Run the application:
+   ```sh
+   flutter run
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Project Structure
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+lib/
+├── main.dart              # Entry point of the application
+├── pages/
+│   ├── home.dart          # Home screen
+│   ├── choose_location.dart # Location selection screen
+│   ├── loading.dart       # Loading screen
+└── services/
+    └── world_time.dart    # Handles API requests
+```
